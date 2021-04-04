@@ -48,19 +48,6 @@ function playerGo(box){
 function aiGo(board){
 	var madeMove = false;
 
-	// while(!madeMove){
-		// var tryPos = Math.floor(Math.random() * 9);
-		// var row = findRow(tryPos);
-		// var pos = findPos(tryPos);
-		// if(board[row][pos] == -1){
-		// 	board[row][pos] = "O";
-		// 	document.getElementById(tryPos).innerText = "O"
-		// 	totalMoves = totalMoves + 1;
-		// 	madeMove = true;
-		// 	checkWin("O");
-		// }
-	// }
-
 	while(!madeMove){
 		if(board[1][1] == -1){ //if center is free play center
 			board[1][1] = "O";
@@ -136,7 +123,6 @@ function aiGo(board){
 					checkWin("O");
 				}
 		}
-
 	}
 }
 
